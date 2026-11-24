@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance History - Student Attendance System</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body onload="initLayout('history'); loadHistory();">
+    <!-- Part 5 (Member 5): Role-Scoped Attendance History with Filters (FR11, UC06) -->
+    <div class="app-shell">
+        <aside id="sidebar" class="sidebar"></aside>
+        <main class="main-content">
+            <h2 class="page-title">Attendance History</h2>
+            <div class="card">
+                <div class="form-grid">
+                    <select id="filterStatus" onchange="loadHistory()">
+                        <option value="">All Statuses</option>
+                        <option value="Present">Present</option>
+                        <option value="Absent">Absent</option>
+                        <option value="Late">Late</option>
+                        <option value="Excused">Excused</option>
+                    </select>
+                    <input id="filterDate" type="date" onchange="loadHistory()">
+                    <button class="btn" onclick="loadHistory()">Apply Filters</button>
+                </div>
+                <table>
+                    <thead><tr><th>Date</th><th>Class</th><th>Student ID</th><th>Student Name</th><th>Status</th><th>GPS Check</th><th>Edit Reason</th></tr></thead>
+                    <tbody id="historyBody"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="/js/apiClient.js"></script>
+    <script src="/js/layout.js"></script>
+    <script src="/js/reports.js"></script>
+</body>
+</html>
