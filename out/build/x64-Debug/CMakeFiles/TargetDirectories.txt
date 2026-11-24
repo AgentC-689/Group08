@@ -1,4 +1,0 @@
-C:/UTH K24/Nam 3/CNPM/Project 7/Student_Attendance_System/out/build/x64-Debug/CMakeFiles/attendance_server.dir
-C:/UTH K24/Nam 3/CNPM/Project 7/Student_Attendance_System/out/build/x64-Debug/CMakeFiles/integration_tests.dir
-C:/UTH K24/Nam 3/CNPM/Project 7/Student_Attendance_System/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-C:/UTH K24/Nam 3/CNPM/Project 7/Student_Attendance_System/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
